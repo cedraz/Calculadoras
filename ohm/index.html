@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="box box2">
+
+        <header>
+            <div class="text">
+                <h1 class="titulos">Lei de Ohm</h1>
+
+                <p id="subtitulo">Tensão elétrica, Resistência e Intensidade</p>
+
+                <p id="formula"> U = R . I</p>
+
+                <p class="detalhes">Primeiramente escolha o tipo de resistência do seu circuito e confirme</p>
+            </div>
+        </header>
+
+        <main class="main-box">
+
+            <select id="select-resistence">
+                <option class="options" value="Selecione o tipo de resistência">Selecione o tipo de resistência
+                </option>
+                <option class="options" value="Uma resistência">Resistência</option>
+                <option class="options" value="Resistência Equivalente">Resistência Equivalente</option>
+            </select>
+
+            <div class="btn btn3">
+                Confirm
+            </div>
+
+            <span class="span-input-req fade"></span>
+            <input type="number" class="input-req">
+
+            <div class="res-input-box">
+
+            </div>
+
+            <div class="mini-box fade">
+                <input class="inputs" type="number" min="0" id="tensao"> =
+                <input class="inputs" type="number" min="0" id="resistencia">
+                . <input class="inputs" type="number" min="0" id="intensidade">
+            </div>
+
+            <div class="box-botoes box-ohm fade">
+
+                <div onclick="calculate()" class="btn btn4" id="button-calcular">
+                    Calcular
+                </div>
+
+                <div onclick="resetOhm()" class="btn btn5" id="button-reset">
+                    Resetar
+                </div>
+
+            </div>
+
+            <div class="answer" id="resposta"></div>
+
+            <div class="answer" id="miliampere"></div>
+
+            <div class="answer" id="consequences"></div>
+
+        </main>
+    </section>
+
+    <script src="ohm.js"></script>
+</body>
+
+</html>

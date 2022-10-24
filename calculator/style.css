@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #1a1a1a;
+    color: aliceblue;
+}
+
+.panel{
+    width: 40%;
+    height: 10vh;
+
+    margin: 20px;
+
+    border: 2px solid white;
+}

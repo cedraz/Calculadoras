@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="box box1">
+
+        <header>
+            <div class="text">
+                <h1 class="titulos">Logaritmos</h1>
+
+                <p>Insira ao menos um valor para logaritmando e base</p>
+
+                <p class="detalhes">(O valor para ao expoente do logaritmando é opcional)</p>
+            </div>
+        </header>
+
+        <main>
+            <div id="logaritmando">
+                log <input class="valores" id="input-logaritmando" min="0" type="number"> ** <input class="valores"
+                    class="inputs" id="input-expoente" type="number"> <br>
+            </div>
+
+            <div id="base">
+                base <input class="valores" id="input-base" type="number">
+            </div>
+
+            <div class="box-botoes">
+
+                <div onclick="logaritmo()" class="btn btn1" id="button-calcular">
+                    Calcular
+                </div>
+
+                <div onclick="resetLog()" class="btn btn2" id="button-reset">
+                    Resetar
+                </div>
+
+            </div>
+
+            <div class="answer" id="resposta-log"></div>
+
+        </main>
+
+    </section>
+
+    <script src="log.js"></script>
+</body>
+
+</html>
